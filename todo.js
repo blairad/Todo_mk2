@@ -12,14 +12,16 @@ form.addEventListener('submit', function(event){
 
 const todoMaker = function(text){
     const todoItem = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = "checkbox";
+    checkbox.value = 1;
+    checkbox.name = 'todo';
+    
     todoItem.textContent = text;
     todoList.appendChild(todoItem); 
+    todoItem.appendChild(checkbox)
 }
-function checkbox(){
-    const check = document.createAttriblue('input')
-    check.setAttribute('type', 'checkbox');
-    document.body.appendChild(check)
-}
+
 
 button.addEventListener('click', function(){
     while(todoList.firstChild){
