@@ -3,6 +3,7 @@ const todoList = document.querySelector('ul');
 const button = document.querySelector('button');
 const input = document.getElementById('todo-item');
 
+
 form.addEventListener('submit', function(event){
     event.preventDefault();
     todoMaker(input.value);
@@ -14,8 +15,11 @@ const todoMaker = function(text){
     todoItem.textContent = text;
     todoList.appendChild(todoItem); 
 }
-// const todoItem = document.createElement('input');
-// todoItem.type = "checkbox";
+function checkbox(){
+    const check = document.createAttriblue('input')
+    check.setAttribute('type', 'checkbox');
+    document.body.appendChild(check)
+}
 
 button.addEventListener('click', function(){
     while(todoList.firstChild){
