@@ -6,3 +6,11 @@
     margin-left: -100px;
     border: 1px solid black;
   }
+  input[type=text] {
+    padding:10px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 55px;
+    padding-left: 150px;
+    margin-left:30px;
+}
