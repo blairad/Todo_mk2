@@ -21,7 +21,25 @@ const todoMaker = function(text){
     todoList.appendChild(todoItem); 
     todoItem.appendChild(checkbox)
 }
-
+function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+  
+  function currentTime(){
+    const today = new Date();
+    let hours = today.getHours();
+    let minutes = today.getMinutes();
+    minutes = checkTime(minutes);
+    
+    document.getElementById("container-time").innerHTML = hours + ":" + minutes;
+    currentTime = setTimeout(function() {
+      time()
+    }, 500);
+  }
+  currentTime();
 
 button.addEventListener('click', function(){
     while(todoList.firstChild){
