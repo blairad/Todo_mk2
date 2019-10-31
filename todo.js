@@ -20,6 +20,21 @@ const todoMaker = function(text){
     todoItem.textContent = text;
     todoList.appendChild(todoItem); 
     todoItem.appendChild(checkbox)
+// // checkbox.checked = todo.complete;
+//     const span = document.createElement('span')
+//     span.contentEditable = true
+    // span.classList.add('editable')
+
+ // If the todo is complete, it will have a strikethrough
+    // if (todo.complete) {
+    //   const strike = document.createElement('s')
+    //   strike.textContent = text
+    //   todoItem.append(strike)
+    // } else {
+    //   // Otherwise just display the text
+    //   todoItem.textContent = text
+    // }
+
 }
 function checkTime(i) {
     if (i < 10) {
