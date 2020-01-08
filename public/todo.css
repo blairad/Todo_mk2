@@ -41,13 +41,13 @@
   top:25%;
   width: 50%;
 }
-header {
-  width: 98%;
-  boarder-box: 1px solid black;
-  padding: 5px 25px;
-  background: red;
+header #nav-items {
+  width: 49%;
+  text-align: right;
+  display: inline-block;
+  text-decoration: none;
 }
-header li {
-  
-}
+header li ul{
+display: inline-block;
+
 }
