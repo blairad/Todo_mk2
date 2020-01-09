@@ -1,4 +1,14 @@
-#container-main{
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* #container-main{
   position: absolute;
   display: block;
   width: 100%;
@@ -41,27 +51,6 @@
   top:25%;
   width: 50%;
 }
-header  {
-  width: 98%;
-  border: 2px solid black;
-  padding: 5px 25px;
-  background: red;
-  opacity: 0.5;
-  display: inline-block;
-  text-decoration: none;
-}
-header #nav-items {
-    border: 1px solid black;
-    width: 98%;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
 
-}
-header li ul {
- display: inline-block;
- text-decoration: none;
-}
-
-
+ */
 

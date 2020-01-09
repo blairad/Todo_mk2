@@ -1,4 +1,4 @@
-const navbar = document.getelementById('header');
+// const navbar = document.getelementById('header');
 const form = document.querySelector('form');
 const todoList = document.querySelector('ul');
 const button = document.querySelector('button');
