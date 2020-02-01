@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
+ overflow-x: hidden;  /* hides the navlinks that slides in from offscreen */
 }
 nav {
   display: flex;
@@ -14,11 +15,16 @@ nav {
   color:#555;
   letter-spacing: 3px;
   font-size: 20px; 
+  margin-right: 5px;
+}
+.logo h4{
+  display: flex;
+  justify-content: left;
 }
 .nav-links{
   display: flex;
   justify-content: space-around;
-  width: 18%;
+  width: 10%;
 
   position: absolute;
   right: 0px;
@@ -28,8 +34,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
-  transform: translateX(100%);
+  transform: translateX(100%);  /*hides sidebar */
   transition: transform 0.5s ease-in;
   }
 .nav-links a {
@@ -43,9 +48,10 @@ nav {
   opacity: 0;
 } 
 .burger {
+  right: 0px;
   display: block;
-  
   cursor: pointer;
+  margin-left: 1100px; /* no idea why this is only way i can seem to get logo and this opposite and not right up against the side of the page :/ */
 }
 .burger div{
   width:20px;
