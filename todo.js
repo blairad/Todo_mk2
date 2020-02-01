@@ -59,6 +59,7 @@ const navSlide = () => {
   const navLinks = document.querySelectorAll('.nav-links li');
 
   burger.addEventListener('click', () => {
+    //toggle nav
     nav.classList.toggle('nav-active');
 
     // animate links
@@ -70,6 +71,8 @@ const navSlide = () => {
 
       }
     });
+    //burger animation
+    burger.classList.toggle('toggle');
   });
 
 }
